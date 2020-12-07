@@ -1,0 +1,2 @@
+rootProject.name = "Jetpack Compose Flappy Bird"
+include ':app'
