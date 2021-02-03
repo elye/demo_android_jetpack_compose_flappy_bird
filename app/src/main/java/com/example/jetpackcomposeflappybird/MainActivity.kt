@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.Text
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInteropFilter
 import androidx.compose.ui.platform.setContent
+import androidx.compose.ui.semantics.SemanticsProperties.Text
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 jumpState,
                 gameScore
             )
-            androidx.compose.foundation.Text(
+            Text(
                 modifier = Modifier.fillMaxWidth(),
                 fontSize = 48.sp,
                 text = gameScore.value.toString(),
